@@ -1,4 +1,5 @@
 # intellij idea
 .idea/
-algorithm.iml
+# algorithm.iml
 out/
+algorithm-cpp/beauty-in-code/cmake-build-debug/
