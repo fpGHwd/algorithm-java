@@ -3,3 +3,4 @@
 # algorithm.iml
 out/
 algorithm-cpp/beauty-in-code/cmake-build-debug/
+.vscode/
