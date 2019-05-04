@@ -1,0 +1,4 @@
+1，Internet data的形式是datagram（数据报）
+2，datagram = header + payload
+3, socket make datagram a stream for a java-programmer
+4, telnet可以模拟用户端的datagram/socket/steam... and so on. 用于研究协议，也就是有服务的服务器

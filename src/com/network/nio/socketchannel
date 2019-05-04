@@ -1,0 +1,2 @@
+socket channel对象，虽然很好理解，比如socket和remotes host，但是始终 不知道它的真实的意思。
+本身的存在应该和channel有着比较好的相似度吧。
