@@ -32,3 +32,5 @@ public class TicketDemo {
         t4.start();
     }
 }
+
+// 已经运行的程序不能再次start()

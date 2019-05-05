@@ -33,11 +33,11 @@ class ObjectDemo{
 			/*
 			Demo d1 = new Demo(2);
 			Demo d2 = new Demo(3);
-			Person p = new Person();
+			Person p144 = new Person();
 			
 			System.out.println(d.equals(d1));
 			System.out.println(d.equals(d2));
-			System.out.println(d.equals(p));
+			System.out.println(d.equals(p144));
 			*/
 			Class c = d.getClass();
 			System.out.println(c.toString()); // class demo
