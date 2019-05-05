@@ -1,0 +1,10 @@
+protected之间的访问
+
+访问权限 4*4
+四种权限        同一个类    同一个包    子  类      不同包
+public           ok         ok         ok       ok
+protected       ok          ok          ok          
+default         ok          ok  
+private         ok
+
+类文件名和两个公有类——不确定：一个类文件中不能有两个以上的公有类和接口。

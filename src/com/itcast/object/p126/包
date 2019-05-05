@@ -1,0 +1,20 @@
+包
+对类文件进行管理 -> 就是类文件/区分
+
+第一行，先有包再有文件。
+
+类的全名变成 
+
+不能自己建文件夹
+
+package有的话，需要加参数。 -d 指定包存放的目录。
+
+写项目先写包，再写类
+好处是源文件和执行文件分离
+
+建立myclass文件夹
+所以有classpath
+
+linux下
+export CLASSPATH=/home/suzumiya/Dropbox/myclass
+java pack.PackageDemo
