@@ -5,7 +5,7 @@
 
 package com.leetcode;
 
-public class Solution148 {
+public class P148 {
 
 //    public ListNode sortList(ListNode head){ // 简单的排序
 //        ListNode rn = head, sl = new ListNode(0), pre;
@@ -76,7 +76,7 @@ public class Solution148 {
             tail = tail.next;
         }
 
-        ListNode lnR = new Solution148().sortList(ln);
+        ListNode lnR = new P148().sortList(ln);
     }
 
     // 也许不刻意的自己也有人喜欢呢

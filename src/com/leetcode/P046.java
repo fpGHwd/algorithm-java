@@ -7,7 +7,7 @@ package com.leetcode;
 
 import java.util.*;
 
-public class Solution046 {
+public class P046 {
 //    public List<List<Integer>> permute(int[] nums) {
 //        List<List<Integer>> answerList = new ArrayList<List<Integer>>();
 //        for (int i = 0; i < nums.length; i++) {
@@ -84,7 +84,7 @@ public class Solution046 {
     public static void main(String[] args){
 //        List<Integer> il = new ArrayList<Integer>(Arrays.asList(1,2,3));
         int[] nums = {1,2,3};
-        List<List<Integer>> lli = new Solution046().permute(nums);
+        List<List<Integer>> lli = new P046().permute(nums);
     }
 }
 

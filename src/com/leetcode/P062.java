@@ -5,7 +5,7 @@
 
 package com.leetcode;
 
-public class Solution062 {
+public class P062 {
 
     // int n function(int k); 具有函数的通用特征，而且容易被用到。
 
@@ -38,7 +38,7 @@ public class Solution062 {
 
     public static void main(String[] args){
 
-        int r = new Solution062().uniquePaths(7,3);
+        int r = new P062().uniquePaths(7,3);
 
     }
 }

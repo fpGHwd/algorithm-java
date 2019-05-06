@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution089 {
+public class P089 {
 
     /**
      * n = 0
@@ -123,7 +123,7 @@ public class Solution089 {
 
     public static void main(String[] args){
         int t1 = 2, t2 = 3;
-        List<Integer> r = new Solution089().grayCode2(3);
+        List<Integer> r = new P089().grayCode2(3);
         System.out.println();
     }
 
