@@ -30,7 +30,7 @@ public class LoggingDaytimeServer {
 
         try{
             InputStream is = ClassLoader.getSystemResourceAsStream("./com/network/serverlog/logging.properties");
-            // todo:如果加载logging的日志文件
+            // 如何加载logging的日志文件
             lm.readConfiguration(is);
             lm.addLogger(auditLogger);
             lm.addLogger(errorLogger);
