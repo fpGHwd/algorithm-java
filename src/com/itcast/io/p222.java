@@ -152,6 +152,10 @@ public class p222 {
             if(sb.length() != 0)return sb.toString();
             return null;
         }
+
+        public void close() throws IOException{
+            fr.close();
+        }
     }
 
     // p234
@@ -273,19 +277,67 @@ public class p222 {
             if(sb.length()!=0)return sb.toString();
             return null;
         }
+
+        public void myClose() throws IOException{
+            fr.close();
+        }
     }
 
     @Test
     public void testMyLineNumberReader() throws IOException{
         FileReader fr = new FileReader("demo.txt");
-        MyLineNumberReaderDemo mnrd = new MyLineNumberReaderDemo(fr);
+        MyLineNumberReaderDemo mnrd = new MyLineNumberReaderDemo(fr);mnrd.setLineNumber(10);
         String line = null;
         while((line = mnrd.myReadLine())!=null){
             System.out.println(mnrd.getLineNumber() + ": " + line);
         }
+        mnrd.myClose();
     }
+
+    // LineNumberReader的readLine()方法在文档中显示是重写了自己的方法，并不是继承自任何父类
 
     // p240 repetition to the most - repetition has much the same as in reuse
     // change file
 
+
+    // p239
+    // 现在希望重用代码来重用MyBufferReader类，从而不用多写相同的代码。区分与Demo
+    class MyLineNumberReader extends MyBufferdReader{
+
+        private int lineNumber = 0;
+        MyLineNumberReader(FileReader fr) {
+            super(fr);
+        }
+
+
+        public void close() throws IOException{
+            super.close();
+        }
+
+        public String readLine() throws IOException{ // 这个地方的改写，其实是一个包装。
+            String s = null;
+            while((s = super.myReadLine()) != null){
+                return ++lineNumber + ": " + s; // todo:这个地方也可以不用写，保持和LineNumberReader一样的功能。
+            }
+            return null;
+        }
+
+        public int getLineNumber(){
+            return this.lineNumber;
+        }
+
+        public void setLineNumber(int lineNumber){
+            this.lineNumber = lineNumber;
+        }
+    }
+
+    @Test
+    public void testMyLineNumberReaderExtends() throws IOException {
+        FileReader fr = new FileReader("demo.txt");
+        MyLineNumberReader mnr = new MyLineNumberReader(fr);
+        String line = null;
+        while((line = mnr.readLine())!= null){
+            System.out.println(line);
+        }
+    }
 }
