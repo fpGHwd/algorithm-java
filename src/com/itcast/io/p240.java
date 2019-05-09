@@ -235,14 +235,22 @@ public class p240 {
 
     //p244
     /*
-    字节流：
+    流 —— 继承自 java.lang.object
+    Reader
+    Writer
+
+    InputStream
+    OutputStream
+
+
+    字符流：
     FileReader
     FileWriter
 
     BufferedReader
     BufferedWriter
 
-    字符流
+    字节流
     FileInputStream
     FileOutputStream
 
@@ -327,6 +335,14 @@ public class p240 {
     //
     @Test
     public void testInToFile() throws IOException {
+
+        /*
+        FileOutputStream 是OutputStream的子类。
+        OutputStreamWriter是Writer的子类
+        BufferedWriter是Writer的子类。
+
+        有一个关系。父子的关系。
+         */
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("system-in-to-file.txt")));
