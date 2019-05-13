@@ -85,11 +85,19 @@ public class p194_1 {
         printCol3(ap);
         printCol3(as);
 
+
+        printCol4(ap);
+        printCol4(as);
+
         /**
          * 限定泛型：技能泛型，里面又能够使用特有的类方法。。。所以这里有一个折衷。
          */
         printCol5(ap);
         printCol5(as);
+
+        // todo 可以？
+        printCol6(ap);
+        printCol6(as);
 
 
         /**
@@ -139,6 +147,14 @@ public class p194_1 {
          * com.itcast.collections.generictype.Student1@3d71d552
          * com.itcast.collections.generictype.Student1@1cf4f579
          * com.itcast.collections.generictype.Student1@18769467
+         * per-abc1...4...18
+         * per-abc2...4...18
+         * per-abc3...4...18
+         * per-abc4...4...18
+         * stu-abc1...4...18
+         * stu-abc2...4...18
+         * stu-abc3...4...18
+         * stu-abc4...4...18
          * per-abc1.....18
          * per-abc2.....18
          * per-abc3.....18
@@ -188,7 +204,8 @@ public class p194_1 {
         for (Iterator<?> ip = ap.iterator(); ip.hasNext(); ) {
 //            Person p = ip.next();
 //            System.out.println(p.getName() + "....." + p.getAge()); // 不能打印
-            System.out.println(ip.next());
+            Person p = (Person)ip.next(); // 多态
+            System.out.println(p.getName() + "...4..." + p.getAge());
 
         }
     }
@@ -203,6 +220,10 @@ public class p194_1 {
     }
 
 
+    /**
+     * 可能super针对子类的final方法
+     * @param ap
+     */
     public static void printCol6(ArrayList<? super Student1> ap) {
         for (Iterator<?> ip = ap.iterator(); ip.hasNext(); ) {
 //            Person p = ip.next();
@@ -237,13 +258,11 @@ public class p194_1 {
 
 
     /**
-     * todo 理解泛型限定
+     * todone 理解泛型限定
      *
      * 不做机械工具。不做最好的的机械事情。。
      * 确定性满格。
      * 只做最强目的性
      */
-
-
 
 }
