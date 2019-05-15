@@ -38,7 +38,7 @@ public class p203 {
 
     public static String charCount(String str) {
         char[] ca = str.toCharArray();
-        TreeMap<Character, Integer> mci = new TreeMap<>(new CharComp());
+        TreeMap<Character, Integer> mci = new TreeMap<Character, Integer>(new CharComp());
         /**
          * 泛型里面只能是引用类型。
          */
