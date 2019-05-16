@@ -10,6 +10,7 @@ package com.leetcode;
 
 public class p005 {
     public String longestPalindrome(String s) {
+
         return "";
     }
 }
