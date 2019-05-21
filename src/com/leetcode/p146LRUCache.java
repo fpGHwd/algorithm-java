@@ -34,5 +34,17 @@ class LRUCache {
  */
 
 
-public class p146 {
+public class p146LRUCache {
+
+    public p146LRUCache(int capacity) {
+
+    }
+
+    public int get(int key) {
+        return -1;
+    }
+
+    public void put(int key, int value) {
+
+    }
 }

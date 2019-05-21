@@ -18,6 +18,13 @@ import java.util.Stack;
 public class Tree {
 
     // creat tree from array
+
+    /**
+     * 创建树,data是所有元素值的数组,i是从数组的位置开始建树
+     * @param data
+     * @param i
+     * @return
+     */
     public static TreeNode creatTree(int[] data, int i) {
         if (i >= data.length || data[i] == -1)
             return null;

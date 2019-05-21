@@ -91,5 +91,9 @@ public class p005 {
 
 //        执行用时 : 21 ms, 在Longest Palindromic Substring的Java提交中击败了76.77% 的用户
 //        内存消耗 : 36.9 MB, 在Longest Palindromic Substring的Java提交中击败了88.38% 的用户
+
+
+//        Runtime: 6 ms, faster than 92.55% of Java online submissions for Longest Palindromic Substring.
+//        Memory Usage: 36.8 MB, less than 99.06% of Java online submissions for Longest Palindromic Substring.
     }
 }
