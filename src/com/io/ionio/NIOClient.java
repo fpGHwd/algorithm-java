@@ -6,7 +6,7 @@
  * @Project:    algorithm
  */
 
-package com.ionio;
+package com.io.ionio;
 
 
 import java.io.IOException;
