@@ -16,16 +16,16 @@ package com.io.aio.Server;
  */
 public class Server {
     private static int DEFAULT_PORT = 12345;
-    private static AsyncServerHandler serverHandle;
+    private static AsyncServerHandler asyncServerHandle;
     public volatile static long clientCount = 0;
     public static void start(){
         start(DEFAULT_PORT);
     }
     public static synchronized void start(int port){
-        if(serverHandle!=null)
+        if(asyncServerHandle!=null)
             return;
-        serverHandle = new AsyncServerHandler(port);
-        new Thread(serverHandle,"Server").start();
+        asyncServerHandle = new AsyncServerHandler(port);
+        new Thread(asyncServerHandle,"Server").start();
     }
     public static void main(String[] args){
         Server.start();
