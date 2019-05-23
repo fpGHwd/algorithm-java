@@ -36,8 +36,8 @@ public class AsyncServerHandler implements Runnable {
         //它的作用：在完成一组正在执行的操作之前，允许当前的现场一直阻塞
         //此处，让现场在此阻塞，防止服务端执行完成后退出
         //也可以使用while(true)+sleep
-        //生产环境就不需要担心这个问题，因为服务端是不会退出的
-        latch = new CountDownLatch(1);
+        //生产环境就不需要担心这个问题，以为服务端是不会退出的
+        latch = new CountDownLatch(1); // while 循环
         //用于接收客户端的连接
         channel.accept(this, new AcceptHandler());
         try {
