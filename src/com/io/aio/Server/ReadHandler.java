@@ -27,7 +27,7 @@ public class ReadHandler implements CompletionHandler<Integer, ByteBuffer> {
 
     //读取到消息后的处理
     @Override
-    public void completed(Integer result, ByteBuffer attachment) {
+    public void completed(Integer result, ByteBuffer attachment) { // 读buffer的dst如何传递到这里的
         //flip操作
         attachment.flip();
         //根据
@@ -56,7 +56,7 @@ public class ReadHandler implements CompletionHandler<Integer, ByteBuffer> {
         writeBuffer.put(bytes);
         writeBuffer.flip();
         //异步写数据 参数与前面的read一样
-        channel.write(writeBuffer, writeBuffer, new CompletionHandler<Integer, ByteBuffer>() { // attachment
+        channel.write(writeBuffer, writeBuffer, new CompletionHandler<Integer, ByteBuffer>() {
             @Override
             public void completed(Integer result, ByteBuffer buffer) {
                 //如果没有发送完，就继续发送直到完成
@@ -66,7 +66,7 @@ public class ReadHandler implements CompletionHandler<Integer, ByteBuffer> {
                     //创建新的Buffer
                     ByteBuffer readBuffer = ByteBuffer.allocate(1024);
                     //异步读  第三个参数为接收消息回调的业务Handler
-                    channel.read(readBuffer, readBuffer, new ReadHandler(channel)); // 把这个channel传递下去。。。还是一个channel
+                    channel.read(readBuffer, readBuffer, new ReadHandler(channel));
                 }
             }
 
