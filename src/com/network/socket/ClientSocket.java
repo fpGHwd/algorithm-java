@@ -12,7 +12,6 @@ package com.network.socket;
 // 比如如果这里的话用Client的话也是没有问题的，自己也不会纠结了。
 // 给任何东西去取好自己喜欢的名字是扩大自己系统的第一步。当然这个好要是你自己觉得的好。
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import org.junit.Test;
 
 import java.io.IOException;
