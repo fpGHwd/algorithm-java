@@ -11,7 +11,7 @@ package com.jzoffer;
 
 public class P8 {
     public static void main(String[] args) {
-        int[] array = {1,4,2,5,2,8,4,2,7,1,3};
+        int[] array = {1,4,2,5,2,8,4,2,7,1,3,13,52,17,34,22,-5,60,99,38,19};
         quickSort(array, 0, array.length-1);
     }
 
@@ -29,6 +29,8 @@ public class P8 {
     }
 
     static void quickSort(int[] arr, int start, int end){
+        if(start == end)return;
+
         int k = partion(arr , start,end);
         if(k > start)
             quickSort(arr,start,k-1);
