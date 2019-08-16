@@ -6,9 +6,9 @@
  * @Time: 8/16/19 3:50 PM
  */
 
-package com.leetcode.tree;
+package com.leetcode;
 
-public class P008 {
+public class P0008 {
     public static int myAtoi(String str) {
         int idx = 0, len = str.length();
         if(len == 0)return 0;
