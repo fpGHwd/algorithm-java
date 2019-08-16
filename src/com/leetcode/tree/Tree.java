@@ -8,26 +8,32 @@
 
 package com.leetcode.tree;
 
+import javax.xml.soap.Node;
+import java.util.ArrayList;
+import java.util.List;
+
 // [3,9,20,null, null, 15,7]
 public class Tree {
     public static final Integer[] treeList = {3,9,20,null,null,15,7};
     public static TreeNode tree = null;
     Tree(){
-        int len = treeList.length;
-        if(len == 0)return;
-        for(int i = 0; (2*i < len) ||(2*i + 1 < len); i++){
+        List<TreeNode> ltn = new ArrayList<>();
+        for(int i = 0; i < treeList.length; i++){
+            if(treeList[i] == null)ltn.add(null);
+            else ltn.add(new TreeNode(treeList[i]));
+        }
+        for(int i = 1;(2*i + 1 < ltn.size()) || (2*i+2 < ltn.size()); i++){
             if(treeList[i] == null) continue;
             else{
-                TreeNode tn = new TreeNode(treeList[i]);
-                if(i == 0) tree = tn;
-                if(2*i +1 < len && treeList[2*i +1] != null){
-                    tn.leftChild = new TreeNode(treeList[2*i +1]);
+                if(2*i + 1 < ltn.size()){
+                    ltn.get(i).leftChild = ltn.get(2*i + 1);
                 }
-                if(2*i+2 < len && treeList[2*i + 2] != null){
-                    tn.rightChild = new TreeNode(treeList[2*i + 2]);
+                if(2 * i + 2 < ltn.size()){
+                    ltn.get(i).rightChild = ltn.get(2* i + 2);
                 }
             }
         }
+        tree = ltn.get(0);
     }
 
     public TreeNode getTree(){return tree;}
