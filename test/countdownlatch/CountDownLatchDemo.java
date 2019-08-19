@@ -1,4 +1,4 @@
-package CountDownLatchTest;
+package countdownlatch;
 
 
 /**
