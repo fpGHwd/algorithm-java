@@ -41,6 +41,7 @@ public class TestFutureTask {
 
 //通过它们可以在任务执行完毕之后得到任务执行结果。
 // https://www.cnblogs.com/dolphin0520/p/3949310.html
+// suzumiya @ 20190819 现在看起来比较好懂了
 
 // Future的作用
 //
