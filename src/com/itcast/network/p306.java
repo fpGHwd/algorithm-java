@@ -43,7 +43,7 @@ class PictureServer3 {
         BufferedInputStream bis =
                 new BufferedInputStream(s.getInputStream());
         BufferedOutputStream bos =
-                new BufferedOutputStream(new FileOutputStream("res/up-half-copied-by-network.png"));
+                new BufferedOutputStream(new FileOutputStream("res/up-half-copied-by-com.network.png"));
 
         byte[] buf = new byte[1024];
         int len;

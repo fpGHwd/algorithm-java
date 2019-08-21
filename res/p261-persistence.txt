@@ -60,10 +60,10 @@
 /home/suzumiya/IdeaProjects/algorithm/src/com/utils/ByteUtils.java
 /home/suzumiya/IdeaProjects/algorithm/src/com/utils/Test.java
 /home/suzumiya/IdeaProjects/algorithm/src/com/huawei/Problem20190410.java
-/home/suzumiya/IdeaProjects/algorithm/src/com/network/TestInetAddress.java
-/home/suzumiya/IdeaProjects/algorithm/src/com/network/nio/TestSocketChannel.java
-/home/suzumiya/IdeaProjects/algorithm/src/com/network/serverlog/LoggingDaytimeServer.java
-/home/suzumiya/IdeaProjects/algorithm/src/com/network/socket/ClientSocket.java
+/home/suzumiya/IdeaProjects/algorithm/src/com/com.network/TestInetAddress.java
+/home/suzumiya/IdeaProjects/algorithm/src/com/com.network/nio/TestSocketChannel.java
+/home/suzumiya/IdeaProjects/algorithm/src/com/com.network/serverlog/LoggingDaytimeServer.java
+/home/suzumiya/IdeaProjects/algorithm/src/com/com.network/socket/ClientSocket.java
 /home/suzumiya/IdeaProjects/algorithm/src/com/leetcode/P043.java
 /home/suzumiya/IdeaProjects/algorithm/src/com/leetcode/P089.java
 /home/suzumiya/IdeaProjects/algorithm/src/com/leetcode/Main.java

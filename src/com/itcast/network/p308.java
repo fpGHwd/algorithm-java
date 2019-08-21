@@ -16,7 +16,7 @@ class LoginClient{
 
         for(int i =0; i< 3; i++){
             String line = bufr.readLine();
-            if(line == null)break; // control +c or network
+            if(line == null)break; // control +c or com.network
             pw.println(line);
 
             String b = bufr1.readLine();
