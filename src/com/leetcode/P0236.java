@@ -63,10 +63,12 @@ public class P0236 {
     public static void main(String[] args){
 
          int[] tree = {3,5,1,6,2,0,8,-1,-1,7,4};
-         TreeNode t = Tree.creatTree(tree, 0);
+/*         TreeNode t = Tree.creatTree(tree, 0);
          TreeNode p = new TreeNode(5), q = new TreeNode(1);
          TreeNode r = new P0236().lowestCommonAncestor(t,p,q);
          System.out.println(r.val);
+         */
+
     }
 }
 

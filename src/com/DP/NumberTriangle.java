@@ -6,7 +6,7 @@
  * @Project:    algorithm
  */
 
-package com.leetcode.DP;
+package com.DP;
 
 import com.leetcode.Tree;
 import com.leetcode.TreeNode;
@@ -28,7 +28,7 @@ public class NumberTriangle {
     public static void main(String[] args){
         TreeNode root;
         int[] data = {1,3,2,4,10,1,4,3,2,20};
-        root = Tree.creatTree(data, 0);
+//        root = Tree.creatTree(data, 0);
     }
 
     public static int maxValue(TreeNode root){

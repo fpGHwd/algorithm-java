@@ -1,20 +1,21 @@
-/*
+/**
  * Created by Intellij IDEA.
- * @Author:     suzumiya
- * @Date:       5/5/19
- * @Time:       10:36 PM
- * @Project:    algorithm
+ *
+ * @Author: suzumiya
+ * @Project: algorithm
+ * @Time: 8/14/19 4:15 PM
  */
 
 package com.leetcode;
 
 public class TreeNode {
-
-    public int val;
+    int val;
     public TreeNode left;
     public TreeNode right;
 
-    public TreeNode(int x) {
-        val = x;
+    public TreeNode(int val){
+        this.val = val;
+        left = null;
+        right = null;
     }
 }

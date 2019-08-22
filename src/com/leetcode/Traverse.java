@@ -6,7 +6,7 @@
  * @Time: 8/14/19 4:15 PM
  */
 
-package com.leetcode.tree;
+package com.leetcode;
 
 import java.util.Stack;
 
@@ -21,17 +21,17 @@ public class Traverse {
 
         while(currentNode != null){
             stn.push(currentNode);
-            currentNode = currentNode.leftChild;
+            currentNode = currentNode.left;
         }
 
         while(!stn.isEmpty()){
             currentNode = stn.pop();
-            if(currentNode.rightChild != null && currentNode.rightChild!= lastVisitedNode){
+            if(currentNode.right != null && currentNode.right != lastVisitedNode){
                 stn.push(currentNode);
-                currentNode = currentNode.rightChild;
+                currentNode = currentNode.right;
                 while(currentNode != null){
                     stn.push(currentNode);
-                    currentNode = currentNode.leftChild;
+                    currentNode = currentNode.left;
                 }
             }else{
                 System.out.println(currentNode.val + ",");
