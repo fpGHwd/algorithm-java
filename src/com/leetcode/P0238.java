@@ -5,7 +5,7 @@
 
 package com.leetcode;
 
-public class P238 {
+public class P0238 {
     public static int[] productExceptSelf(int[] nums) {
         if(nums.length == 2){
             return new int[]{nums[1], nums[0]};
@@ -43,7 +43,7 @@ public class P238 {
     public static void main(String[] args){
 //        int[] input = {1,2,3,4};
         int[] input = {9,0,-2};
-        int[] ret = P238.productExceptSelf(input);
+        int[] ret = P0238.productExceptSelf(input);
         System.out.println();
     }
 }

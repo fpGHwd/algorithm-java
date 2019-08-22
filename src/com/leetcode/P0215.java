@@ -5,7 +5,7 @@
 
 package com.leetcode;
 
-public class P215 {
+public class P0215 {
 
     public int findKthLargest(int[] nums, int k) {
         if(nums.length == 1)return nums[0];
@@ -56,7 +56,7 @@ public class P215 {
         int k = 2, k2 =1;
         int[] nums4 = {-1,-1}; int k4 =2;
 
-        int z = new P215().findKthLargest(nums4, k4);
+        int z = new P0215().findKthLargest(nums4, k4);
 //        new P215().heapfy(h, hs);
         System.out.println(z);
     }
