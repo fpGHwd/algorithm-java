@@ -12,7 +12,7 @@ public class P0367 {
 
     public boolean isPerfectSquare(int num) {
         int end = 46340, start = 0, mid;
-        while(end < start){
+        while(end >= start){
             mid = (end+start)/2;
             if(mid * mid == num){
                 return true;
@@ -27,5 +27,6 @@ public class P0367 {
 
     public static void main(String[] args) {
         System.out.println(new P0367().isPerfectSquare(16));
+        System.out.println(new P0367().isPerfectSquare(9));
     }
 }
