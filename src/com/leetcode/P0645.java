@@ -30,8 +30,7 @@ public class P0645 {
         int nums1[] = {2,2};
         int nums2[] = {3,2,3,4,6,5};
         System.out.println(new P0645().findErrorNums(nums));
-        System.out.println(new P0645().findErrorNums(nums1))
-        ;
+        System.out.println(new P0645().findErrorNums(nums1));
         System.out.println(new P0645().findErrorNums(nums2));
     }
 }

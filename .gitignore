@@ -4,3 +4,5 @@
 out/
 .vscode/
 target/
+
+*attach_pid*
