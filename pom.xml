@@ -60,9 +60,7 @@
             <scope>compile</scope>
         </dependency>
 
-
     </dependencies>
-
     <!-- maven-compiler-plugin -->
     <build>
         <plugins>
