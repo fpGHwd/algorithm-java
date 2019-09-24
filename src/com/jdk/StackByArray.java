@@ -79,7 +79,8 @@ public class StackByArray{
     public static void main(String[] args) {
         StackByArray myStack = new StackByArray(3);
         myStack.push(1);
-        myStack.push(2);
+        myStack.push(
+                    2);
         myStack.push(3);
         myStack.push(4);
         myStack.push(5);
